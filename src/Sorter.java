@@ -5,17 +5,17 @@
  * different specified directories.
  * 
  * Run file to sort
- * 
+ * v1
  */
 
 import java.io.File;
 
 public class Sorter {
 	//Downloads file to sort
-	static String downloadpath = "C:/Users/mineh/Downloads/";
+	static String downloadpath = "C:/Users/USERHERE/Downloads/";
 	//Sorting paths|| MUST MODIFY
 	
-	static String imagepath = "C:/Users/mineh/Pictures/";
+	static String imagepath = "C:/Users/USERHERE/Pictures/";
 	static String compressedpath = "C:/Users/USERHERE/Documents/";
 	static String textpath = "C:/Users/USERHERE/Documents/";
 	static String audiopath = "C:/Users//mineh/Video/";
@@ -59,8 +59,8 @@ public class Sorter {
    	  	String type = getFileExtension(temp);
    	  	for (String s: fileTypes) {
 		  if (type.equals(s)) {
-			  file.renameTo(new File(imagepath+temp));
-			  System.out.println("Moved: "+temp + "  -->  " +imagepath);
+			  file.renameTo(new File(path+temp));
+			  System.out.println("Moved: "+temp + "  -->  " +path);
 			  found = true;
 		  }
 	  }
